@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: Barlow Medium;
+    color: #752100;
+}
+/* ナビゲーション */
+.main-nav{
+    list-style: none;
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+}
+.main-nav a{
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 60px;
+    display: block;
+    color: #752100;
+}
+.main-nav a:hover{
+   color: #000;
+}
+
+/* herder */
+header{
+    background-color: #EAF4FC;
+    width: 100%;
+    height: 620px;
+}
+.main-title,
+button{
+    margin-left: 250px;
+}
+button a{
+    color: #752100;
+    text-decoration: none;
+}
+button a:hover{
+    color: #fff;
+}
+.main-title h1{
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 50px;
+    line-height: 75px;
+}
+.main-title p{
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+button{
+    color: #752100;
+    font-weight: bold;
+    background-color: #C8E0FE;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+/* メイン　*/
+.content-item,
+.content-item2{
+    background-color: #fff;
+    width: 100%;
+    height: 470px;
+}
+.content-item img,
+.content-item2 img{
+    padding-left: 250px;
+    padding-top: 100px;
+}
+.content-item p,
+.content-item2 p{
+    font-size: 20px;
+    float: right;
+    padding-right: 300px;
+    padding-top: 230px;
+}
+.content-item p:hover,
+.content-item2 p:hover{
+    font-size: 22px;
+}
+.content-item a,
+.content-item2 a{
+    color: #752100;
+}
+
+/* お問い合わせ */
+form h4{
+    font-size: 27px;
+    padding-left: 700px;
+    padding-top: 80px;
+}
+form{
+    background-color: #EAF4FC;
+    width: 100%;
+    height: 580px;
+    display: block;
+}
+form div{
+    padding-left: 650px;
+    margin-bottom: 14px;
+}
+input[type="submit"]{
+    margin-left: 650px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #752100;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px #752100 solid;
+}
+label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    background: #fff;
+    border: 1px #fff solid;
+    width: 300px;
+}
+input[type="text"],
+input[type="email"]{
+    padding: 7px;
+}
+textarea{
+    padding: 30px;
+}
+form h1{
+    background-color: #EAF4FC;
+    padding-left: 350px;
+    padding-top: 50px;
+}
+
+/* footer */
+footer{
+   background-color: #fff;
+}
+footer img{
+    margin-left: 750px;
+    margin-top: 20px;
+}
+footer p{
+    margin-left: 680px;
+}
+
+/* About */
+.about{
+    width: 100%;
+    height: 1050px;
+    background-color: #EAF4FC;
+}
+.about h1,
+.about h4{
+    float: left;
+}
+.about h1{
+    padding-left: 350px;
+    padding-top: 30px;
+    font-size: 40px;
+}
+.about h4{
+    padding-top: 60px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+.about img{
+    display: block;
+    margin-right: auto;
+    padding-top: 130px;
+    width: 450px;
+}
+.about p{
+    padding-top: 50px;
+    padding-left: 350px;
+    line-height: 25px;
+}
+.about p a{
+    color: #752100;
+}
+.about p a:hover{
+    color: #000;
+}
+
+/* Works */
+section{
+    width: 100%;
+    height: 1380px;
+    background-color: #EAF4FC;
+}
+section h1{
+    font-size: 40px;
+    padding-left: 350px;
+    padding-top: 50px;
+}
+section h4{
+    font-size: 20px;
+    padding-left: 350px;
+    padding-top: 10px;
+}
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3%;
+    margin-left: 350px
+}
+.grid img{
+    width: 450px;
+    height: 230px;
+    margin-bottom: 20px;
+}
+.item p a{
+    color: #752100;
+}
+.item p a:hover{
+    color: #000;
+}
+
+/* レスポンシブ */
+@media(max-width: 600px){
+    .main-title,
+    button{
+        margin-left: 50px;
+    }
+    .main-title h1{
+        font-size: 35px;
+    }
+    .main-title p{
+        font-size: 14px;
+    }
+
+    .content-item img,
+    .content-item img{
+        padding-top: 40px;
+    }
+    .content-item p,
+    .content-item2 p{
+        font-size: 10px;
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+    .content-item p:hover,
+    .content-item2 p:hover{
+        font-size: 14px;
+    }
+}
